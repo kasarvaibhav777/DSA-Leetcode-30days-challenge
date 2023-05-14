@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Searching ElementIn Array</title>
+
+    <script>
+
+        function searchE(){
+            let data=[1,12,52,78,45,26,82];
+    let element=document.getElementById("element").value;
+   
+    for (let i=0;i<=data.length-1;i++)
+    {
+       if( element==(data[i])){
+        
+        console.log("Yes it is present at: ",i,"index of array")
+        document.write("Yes it is present at: ",i,"index of array");
+        break;
+       }else{
+        console.log("It is not present in the given array")
+        document.write("It is not present in the given array")
+        break;
+       }
+
+    }
+        }
+    
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="write the element" id="element">
+    <button onclick="searchE()">search element</button>
+    
+</body>
+</html>

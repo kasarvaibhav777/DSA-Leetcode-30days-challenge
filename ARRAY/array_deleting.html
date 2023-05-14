@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Array Element Deleting</title>
+    <script>
+        function deletE() {
+
+            let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            let posE = document.getElementById("position").value;
+            posE = parseInt(posE);            //The parseInt method parses a value as a string and returns the first integer.
+            for (let i = posE; i < data.length; i++) {     // tp start moving elements from the given position;
+                data[i] = data[i + 1];                     //to move the element to next position
+            }
+            data.length = data.length - 1;               //to delet last element of the array
+
+            document.write(data);
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="position" placeholder="write index of the element" />
+    <button onclick="deletE()">delete the element</button>
+
+</body>
+
+</html>
